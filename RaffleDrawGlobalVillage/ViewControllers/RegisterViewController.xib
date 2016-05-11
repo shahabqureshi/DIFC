@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="comparableExperienceTextField" destination="1C2-44-ZyH" id="bfi-82-V6a"/>
+                <outlet property="emailAddressTextField" destination="0cN-AF-ZKI" id="9om-sT-le5"/>
+                <outlet property="interestedInTextField" destination="YBv-2R-1d5" id="vLb-2l-azO"/>
+                <outlet property="knowAboutTextField" destination="1hE-DE-Trs" id="7Mb-uu-ytv"/>
+                <outlet property="leastAttractiveTextField" destination="u7j-E6-WQZ" id="oYb-qE-V7F"/>
+                <outlet property="manualEntryView" destination="Ktg-63-7ab" id="IJE-8u-bCz"/>
+                <outlet property="mostAttractiveTextField" destination="dVq-cy-12l" id="bfm-YV-JW2"/>
+                <outlet property="otherTextField" destination="YlA-TW-aSV" id="BlN-Dh-qQj"/>
+                <outlet property="rankDIFCTextField" destination="DeX-yG-Iq4" id="tDw-V1-yUc"/>
+                <outlet property="view" destination="1fC-kv-Ukx" id="Ki3-B2-HxB"/>
+                <outlet property="whiteBGView" destination="mVm-iv-4pY" id="l40-Hv-uy3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="1fC-kv-Ukx" userLabel="Custom View">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" id="3AZ-kl-zgA">
+                    <rect key="frame" x="-5" y="0.0" width="1029" height="768"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="mVm-iv-4pY" userLabel="White BG View">
+                    <rect key="frame" x="0.0" y="93" width="1024" height="675"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nkm-B8-Yik" userLabel="Background Button">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="675"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapBGButton:" destination="-1" eventType="touchUpInside" id="x3i-BJ-WWB"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you know about DIFC?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iXj-la-Ecc">
+                            <rect key="frame" x="41" y="22" width="942" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" background="active_dropdown_field.png" id="1hE-DE-Trs" userLabel="Full Name Text Field">
+                            <rect key="frame" x="41" y="45" width="942" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="TlF-25-yYP"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is most attractive about DIFC?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ibk-PB-dcx">
+                            <rect key="frame" x="41" y="111" width="442" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" background="active_dropdown_field.png" id="dVq-cy-12l" userLabel="Mobile Number  Text Field">
+                            <rect key="frame" x="41" y="135" width="445" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="xHS-cN-iUO"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" background="active_dropdown_field.png" id="DeX-yG-Iq4" userLabel="Email Address Text Field">
+                            <rect key="frame" x="41" y="228" width="942" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="8MM-lW-TNm"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" background="active_dropdown_field.png" id="1C2-44-ZyH" userLabel="Emirates Text Field">
+                            <rect key="frame" x="41" y="326" width="942" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="2mX-uM-0Er"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" background="activefield.png" id="0cN-AF-ZKI" userLabel="Age Text Field">
+                            <rect key="frame" x="41" y="517" width="942" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="ZcL-ct-lhq"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" background="active_dropdown_field.png" id="YBv-2R-1d5" userLabel="Full Name Text Field">
+                            <rect key="frame" x="41" y="420" width="942" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="g2Z-Jc-XJa"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" background="active_dropdown_field.png" id="u7j-E6-WQZ" userLabel="Nationality Text Field">
+                            <rect key="frame" x="538" y="135" width="445" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="z6P-bC-STA"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is least attractive about DIFC?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LJc-Xe-YZW">
+                            <rect key="frame" x="538" y="110" width="442" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How would you rank DIFC compared to other international financial centres?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yyQ-Fx-8n3">
+                            <rect key="frame" x="41" y="204" width="942" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which international financial centre offers a comparable experience to DIFC?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RuV-oG-y71">
+                            <rect key="frame" x="41" y="303" width="939" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What particular services are you interested in? Please specify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XzT-Fx-j3S">
+                            <rect key="frame" x="41" y="397" width="942" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you would like to receive news from the DIFC, kindly share your email address." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ki0-fZ-C7z">
+                            <rect key="frame" x="41" y="493" width="942" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="btL-BO-LZA" userLabel="Cancel Button">
+                            <rect key="frame" x="327" y="583" width="376" height="84"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="buttonnext.png">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapRegisterButtons:" destination="-1" eventType="touchUpInside" id="2oU-jS-r8X"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="innerlogo.png" id="fKK-cH-KpO">
+                    <rect key="frame" x="38" y="21" width="144" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mft-Mf-3h9" userLabel="Back-Button">
+                    <rect key="frame" x="-5" y="-1" width="193" height="94"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="didTapBackButton:" destination="-1" eventType="touchUpInside" id="edB-bi-gHg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill the form below, all fields are required." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h4O-1c-PCD">
+                    <rect key="frame" x="630" y="39" width="363" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view opaque="NO" alpha="0.5" contentMode="scaleToFill" id="Ktg-63-7ab" userLabel="Manual Entry View">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wLo-Zq-rmf" userLabel="BG Button">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapBGButton:" destination="-1" eventType="touchUpInside" id="aKE-9D-6fB"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manual_scan.png" id="HrG-PY-ZeY">
+                            <rect key="frame" x="0.0" y="175" width="1024" height="243"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gbS-J5-dNe" userLabel="Add Button">
+                            <rect key="frame" x="811" y="226" width="69" height="133"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapManualEntryButtons:" destination="-1" eventType="touchUpInside" id="KTQ-Bg-Mvq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f1h-oK-5Hr" userLabel="Cross Button">
+                            <rect key="frame" x="888" y="226" width="99" height="136"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapManualEntryButtons:" destination="-1" eventType="touchUpInside" id="H8i-B6-hYD"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="YlA-TW-aSV">
+                            <rect key="frame" x="73" y="253" width="736" height="83"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.015686274510000001" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="uLB-w0-WqG"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <point key="canvasLocation" x="-20" y="297"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="active_dropdown_field.png" width="952" height="60"/>
+        <image name="activefield.png" width="952" height="60"/>
+        <image name="bg.png" width="1028" height="752"/>
+        <image name="buttonnext.png" width="376" height="84"/>
+        <image name="innerlogo.png" width="144" height="56"/>
+        <image name="manual_scan.png" width="1024" height="243"/>
+    </resources>
+</document>
